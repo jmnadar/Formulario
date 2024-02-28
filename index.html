@@ -11,7 +11,7 @@
     <!-- CODIGO FORMULARIO -->
     <section class="mother_container_form">
 
-        <form class="container_form" action="Registro.php" method="post">
+        <form class="container_form" action="/Formulario/Registro.php" method="post">
 
             <!-- MARCA Y CANAL DE CONTACTO -->
             <div class="cont_fomr-nadar">
@@ -90,7 +90,6 @@
             <div class="cont_form_other">
 
                 <!-- FECHA Y HORA DE REGISTRO -->
-                <!-- TODO:VERIFICAR QUE SI GUARDE LA HORA CORRECTA -->
                 <input type="hidden" value="<?php echo $fechaopen; ?>" name="fechaopen"> 
 
                 <!-- ESTADO DEL CONTACTO -->
@@ -145,6 +144,10 @@
     </div>
 
     <!-- CONECCION ARCHIVO JAVACRIPT -->
-    <script src="scryp.js"></script>
+    <script src="/Formulario/scryp.js"></script>
+    <!-- TODO: REALIZAR MODAL O POUP AL REGUSTRASR -->
+    <!-- TODO: CREAR LAS DIFERENTES BASES DE DATOS MULTI OPCIONES -->
+    <!-- TODO: REALIZAR CONSULTA DE USUARIO EN BASE DE DATOS E IMPRECION EN PATALLA  -->
+    <!-- TODO: VISULIZAR LOS CAOSOS TIPICADOS COMO IMPORTANTES EN PANTALLA -->
 </body>
 </html>
