@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="stylos.css">
+</head>
+<body>
+
+    <!-- CODIGO FORMULARIO -->
+    <section class="mother_container_form">
+
+        <form class="container_form" action="Registro.php" method="post">
+
+            <!-- MARCA Y CANAL DE CONTACTO -->
+            <div class="cont_fomr-nadar">
+
+                <Label>Marca</Label><br>
+                <select name="marca" id="marca">
+                    <option value="">-- Seleccione Marca --</option>
+                    <option value="Speedo">Speedo</option>
+                    <option value="O'Neill">O'Neill</option>
+                </select><br>
+
+                <label for="">Tipo de cliente</label><br>
+                <select name="tipodecliente" id="tipodecliente">
+                    <option value="">-- Tipo de Cliente --</option>
+                    <option value="Cliente">Cliente</option>
+                    <option value="Prospecto">Prospecto</option>
+                    <option value="Proveedor">Proveedor</option>
+                </select><br>
+
+                <label for="">Gestor</label><br>
+                <select name="gestor" id="gestor">
+                    <option value="">-- Gestor --</option>
+                    <option value="kelly">Kelly</option>
+                    <option value="Juan">Juan</option>
+                </select><br>
+
+                <label for="canaldecontacto">Canal de contacto</label><br>
+                <select name="canaldecontacto" id="canaldecontacto">
+                    <option value="">-- Canal de contacto --</option>
+                    <option value="Whatsapp">Whatsapp</option>
+                    <option value="Email">E-mail</option>
+                    <option value="Telefono">Telefono</option>
+                    <option value="Tienda">Tienda</option>
+                </select>
+
+            </div>
+
+            <!-- INFORMCION DEL CLIENTE -->
+            <div class="cont_form_client">
+
+                <label for="nombre">Nombre</label><br>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre del cliente"><br>
+
+                <label for="cedula">Numero de cedula</labeCedulal><br>
+                <input type="number" name="cedula" id="cedula" placeholder="Cédula"><br>
+
+                <label for="telefono">Celular</label><br>
+                <input type="tel" name="telefono" id="telefono" placeholder="Número Celular"><br>
+
+                <label for="">E-mail</label><br>
+                <input type="email" name="email" id="email" placeholder="Correo">
+
+            </div>
+
+            <!-- DATOS DEL REGISTRO DEL CLIENTE -->
+            <div class="cont_form_orden">
+
+                <label for="orden">Numero de Orden</label><br>
+                <input type="number" name="orden" id="orden" placeholder="Número de orden"><br>
+
+                <!-- SELEC Y OPCIONES MOTIVOS DE CONTACTO-->
+                <label for="">Motivo de contacto</label><br>
+                <select name="motivo" id="motivo">
+                    <option value="">-- Motivo de contacto--</option>
+                </select><br>
+
+                <!-- SELEC Y OPCIONES SUB MOTIVOS DE CONTACTO-->
+                <label for="">Sub motivo de contacto</label><br>
+                <select name="submotivo" id="submotivo">
+                    <option value="">-- Submotivo del contacto--</option>
+                </select>
+
+            </div>
+
+            <!-- DATOS CORPORATIVOS -->
+            <div class="cont_form_other">
+
+                <!-- FECHA Y HORA DE REGISTRO -->
+                <!-- TODO:VERIFICAR QUE SI GUARDE LA HORA CORRECTA -->
+                <input type="hidden" value="<?php echo $fechaopen; ?>" name="fechaopen"> 
+
+                <!-- ESTADO DEL CONTACTO -->
+                <label for="">Estado del contacto</label><br>
+                <Select name="estadodelcaso" id="estadodelcaso">
+                    <option value="">-- Estado del caso --</option>
+                    <option value="Abierto">Abierto</option>
+                    <option value="En gestion">En proceso</option>
+                    <option value="Finalizado">Finalizado</option>
+                </Select><br>
+
+                <!-- NIVEL DE CONTCTO DEL CLCIENTE -->
+                <label for="">Nivel de importacncia</label><br>
+                <select name="niveldeimportancia" id="niveldeimportancia">
+                    <option value="">-- Nivel de Importancia --</option>
+                    <option value="Bajo">Bajo</option>
+                    <option value="Medio">Medio</option>
+                    <option value="Alto">Alto</option>
+                </select><br>
+
+                <!-- AREA A ESCALAR -->
+                <label for="">Nivel de gestion</label><br>
+                <select name="niveldegestion" id="niveldegestion">
+                    <option value="">-- Nivel de Gestión --</option>
+                    <option value="N1_SAC">N1_SAC</option>
+                    <option value="N2_E-CO&TI">N2_E-CO&TI</option>
+                    <option value="N3_OTRAS-AREAS-DCDC">N3_OTRAS_AREAS</option>
+                </select>
+
+            </div>
+
+            <!-- CAMPO DE TEXTO DEL USER -->
+            <label for="">Detalles del contacto</label><br>
+            <textarea class="cont_form_detail" name="detalledelagestion" id="detalledelagestion" cols="" rows="6"
+            placeholder="Escriba el detella del contacto....."></textarea>
+
+            <!-- BOTONES DE GUARDADO Y REINICIO -->
+            <div class="cont_form_btn-com">
+                <!-- <button type="submit" class="btn">Guardar</button> -->
+                <input type="submit" value="Guardar" class="btn">
+
+                <input type="reset" value="Resetiar" class="btn">
+            </div>
+
+        </form>
+
+    </section>
+
+    <!-- CODIGO MODAL -->
+    <div id="popup" class="oculto">
+        <p id="mensaje"></p>
+    </div>
+
+    <!-- CONECCION ARCHIVO JAVACRIPT -->
+    <script src="scryp.js"></script>
+</body>
+</html>
