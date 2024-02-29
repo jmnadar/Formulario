@@ -1,6 +1,6 @@
 const motivos = [{
     id: "0",
-    name: "Informcion general",
+    name: "Información general",
     submotivo: [{
             id: 0,
             name: "Información sobre tallas",
