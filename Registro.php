@@ -42,7 +42,7 @@ $detalledelagestion = $_POST["detalledelagestion"];
 // Validar datos (opcional)
 
 // Insertar datos en la tabla
-$sql = "INSERT INTO prueba_user (tipodecliente, marca, gestor, canaldecontacto, 
+$sql = "INSERT INTO usuarios (tipodecliente, marca, gestor, canaldecontacto, 
 nombre, cedula, telefono, email, orden, motivo, submotivo, estadodelcaso, 
 niveldeimportancia, niveldegestion, detalledelagestion, fechaopen) 
 VALUES ('$tipodecliente','$marca','$gestor','$canaldecontacto','$nombre','$cedula',
