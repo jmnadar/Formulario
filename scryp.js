@@ -1,5 +1,6 @@
-const motivos = [{
-    id: "0",
+const motivos = [
+{
+    id: 0,
     name: "Información general",
     submotivo: [{
             id: 0,
@@ -97,7 +98,7 @@ const motivos = [{
     ]
 },
 {
-    id: 0,
+    id: 2,
     name: "PQR",
     submotivo: [{
             id: 0,
@@ -140,7 +141,33 @@ const motivos = [{
             name: "Horarios para cambios en tienda",
         },
     ]
+},
+{
+    id: 3,
+    name: "Tienda",
+    submotivo: [{
+            id: 0,
+            name: "Cambio de tallas",
+        },
+        {
+            id: 1,
+            name: "Antisipo pos",
+        },
+        {
+            id: 2,
+            name: "Saldo web",
+        },
+        {
+            id: 3,
+            name: "Retracto",
+        },
+        {
+            id: 4,
+            name: "Garantia",
+        },
+    ]
 }
+
 ];
 
 let selectMotivos = document.getElementById("motivo");
