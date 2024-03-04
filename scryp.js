@@ -140,6 +140,10 @@ const motivos = [
             id: 9,
             name: "Horarios para cambios en tienda",
         },
+        {
+            id:10,
+            name: "Cambio por talla-saldo a favor web",
+        }
     ]
 },
 {
@@ -151,11 +155,11 @@ const motivos = [
         },
         {
             id: 1,
-            name: "Antisipo pos",
+            name: "Anticipo pos",
         },
         {
             id: 2,
-            name: "Saldo web",
+            name: "Saldo a favor web",
         },
         {
             id: 3,
@@ -163,11 +167,10 @@ const motivos = [
         },
         {
             id: 4,
-            name: "Garantia",
+            name: "Garantía",
         },
     ]
-}
-
+},
 ];
 
 let selectMotivos = document.getElementById("motivo");
@@ -182,7 +185,7 @@ motivos.map(item => {
 loadMotivos();
 
 const loadSubmotivos = (nameMotivo) => {
-let options = `<option value="">Elige un motivo</option>`;
+let options = `<option value="">--Elige un motivo--</option>`;
 
 motivos.find(motivo => motivo.name === nameMotivo).submotivo.map(item => {
     options += `<option value="${item.name}">${item.name}</option>`;
@@ -193,7 +196,7 @@ selectSubmotivos.innerHTML = options;
 
 selectMotivos.addEventListener("change", function(e) {
 if (!e.target.value) {
-    selectSubmotivos.innerHTML = `<option value="">Elige un submotivo</option>`;
+    selectSubmotivos.innerHTML = `<option value="">--Elige un submotivo--</option>`;
 } else {
     loadSubmotivos(e.target.value);
 }

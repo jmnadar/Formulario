@@ -16,14 +16,14 @@
             <!-- MARCA Y CANAL DE CONTACTO -->
             <div class="cont_fomr-nadar">
 
-                <Label>Marca</Label><br>
+                <Label class="fontlab" for="marca">Marca</Label><br>
                 <select name="marca" id="marca">
                     <option value="">-- Seleccione Marca --</option>
                     <option value="Speedo">Speedo</option>
                     <option value="O'Neill">O'Neill</option>
                 </select><br>
 
-                <label for="">Tipo de cliente</label><br>
+                <label class="fontlab" for="tipodecliente">Tipo de cliente</label><br>
                 <select name="tipodecliente" id="tipodecliente">
                     <option value="">-- Tipo de Cliente --</option>
                     <option value="Cliente">Cliente</option>
@@ -31,20 +31,22 @@
                     <option value="Proveedor">Proveedor</option>
                 </select><br>
 
-                <label for="">Gestor</label><br>
+                <label for="gestor" class="fontlab">Gestor</label><br>
                 <select name="gestor" id="gestor">
                     <option value="">-- Gestor --</option>
                     <option value="kelly">Kelly</option>
                     <option value="Juan">Juan</option>
                 </select><br>
 
-                <label for="canaldecontacto">Canal de contacto</label><br>
+                <label for="canaldecontacto" class="fontlab">Canal de contacto</label><br>
                 <select name="canaldecontacto" id="canaldecontacto">
                     <option value="">-- Canal de contacto --</option>
                     <option value="Whatsapp">WhatsApp</option>
                     <option value="Email">E-mail</option>
                     <option value="Telefono">Teléfono</option>
                     <option value="Tienda">Tienda</option>
+                    <option value="Tienda">Multicanal</option>
+
                 </select>
 
             </div>
@@ -52,16 +54,16 @@
             <!-- INFORMCION DEL CLIENTE -->
             <div class="cont_form_client">
 
-                <label for="nombre">Nombre</label><br>
+                <label for="nombre" class="fontlab">Nombre</label><br>
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre del cliente"><br>
 
-                <label for="cedula">Número de cédula</labeCedulal><br>
+                <label for="cedula" class="fontlab">Número de cédula</labeCedulal><br>
                 <input type="number" name="cedula" id="cedula" placeholder="Cédula"><br>
 
-                <label for="telefono">Celular</label><br>
+                <label for="telefono" class="fontlab">Celular</label><br>
                 <input type="tel" name="telefono" id="telefono" placeholder="Número Celular"><br>
 
-                <label for="">E-mail</label><br>
+                <label for="email" class="fontlab">E-mail</label><br>
                 <input type="email" name="email" id="email" placeholder="Correo">
 
             </div>
@@ -69,17 +71,17 @@
             <!-- DATOS DEL REGISTRO DEL CLIENTE -->
             <div class="cont_form_orden">
 
-                <label for="orden">Número de Orden</label><br>
+                <label for="orden" class="fontlab">Número de Orden</label><br>
                 <input type="number" name="orden" id="orden" placeholder="Número de orden"><br>
 
                 <!-- SELEC Y OPCIONES MOTIVOS DE CONTACTO-->
-                <label for="">Motivo de contacto</label><br>
+                <label for="motivo" class="fontlab">Motivo de contacto</label><br>
                 <select name="motivo" id="motivo">
                     <option value="">-- Motivo de contacto--</option>
                 </select><br>
 
                 <!-- SELEC Y OPCIONES SUB MOTIVOS DE CONTACTO-->
-                <label for="">Sub motivo de contacto</label><br>
+                <label for="submotivo" class="fontlab">Sub motivo de contacto</label><br>
                 <select name="submotivo" id="submotivo">
                     <option value="">-- Submotivo del contacto--</option>
                 </select>
@@ -93,7 +95,7 @@
                 <input type="hidden" value="<?php echo $fechaopen; ?>" name="fechaopen"> 
 
                 <!-- ESTADO DEL CONTACTO -->
-                <label for="">Estado del contacto</label><br>
+                <label for="estadodelcaso" class="fontlab">Estado del contacto</label><br>
                 <Select name="estadodelcaso" id="estadodelcaso">
                     <option value="">-- Estado del caso --</option>
                     <option value="Abierto">Abierto</option>
@@ -102,7 +104,7 @@
                 </Select><br>
 
                 <!-- NIVEL DE CONTCTO DEL CLCIENTE -->
-                <label for="">Nivel de importancia</label><br>
+                <label for="niveldegestion" class="fontlab">Nivel de importancia</label><br>
                 <select name="niveldeimportancia" id="niveldeimportancia">
                     <option value="">-- Nivel de Importancia --</option>
                     <option value="Bajo">Bajo</option>
@@ -111,7 +113,7 @@
                 </select><br>
 
                 <!-- AREA A ESCALAR -->
-                <label for="">Nivel de gestión</label><br>
+                <label for="niveldegestion" class="fontlab">Nivel de gestión</label><br>
                 <select name="niveldegestion" id="niveldegestion">
                     <option value="">-- Nivel de Gestión --</option>
                     <option value="N1_SAC">N1_SAC</option>
@@ -122,16 +124,16 @@
             </div>
 
             <!-- CAMPO DE TEXTO DEL USER -->
-            <label for="">Detalles del contacto</label><br>
-            <textarea class="cont_form_detail" name="detalledelagestion" id="detalledelagestion" cols="" rows="6"
+            <label for="detalledelagestion" class="fontlab">Detalles del contacto</label><br>
+            <textarea class="cont_form_detail diferent fontlab" name="detalledelagestion" id="detalledelagestion" rows="6"
             placeholder="Escriba el detella del contacto....."></textarea>
 
             <!-- BOTONES DE GUARDADO Y REINICIO -->
-            <div class="cont_form_btn-com">
+            <div class="cont_form_btn-com diferent">
                 <!-- <button type="submit" class="btn">Guardar</button> -->
-                <input type="submit" value="Guardar" class="btn">
+                <input type="submit" value="Guardar" class="btn fontlab">
 
-                <input type="reset" value="Resetiar" class="btn">
+                <input type="reset" value="Resetiar" class="btn fontlab">
             </div>
 
         </form>
