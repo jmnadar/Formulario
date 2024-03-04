@@ -151,11 +151,11 @@ const motivos = [
         },
         {
             id: 1,
-            name: "Antisipo pos",
+            name: "Anticipo pos",
         },
         {
             id: 2,
-            name: "Saldo web",
+            name: "Saldo a favor web",
         },
         {
             id: 3,
@@ -163,7 +163,7 @@ const motivos = [
         },
         {
             id: 4,
-            name: "Garantia",
+            name: "Garantía",
         },
     ]
 }
