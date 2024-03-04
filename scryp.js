@@ -140,6 +140,10 @@ const motivos = [
             id: 9,
             name: "Horarios para cambios en tienda",
         },
+        {
+            id:10,
+            name: "Cambio por talla-saldo a favor web",
+        }
     ]
 },
 {
@@ -166,8 +170,7 @@ const motivos = [
             name: "Garantía",
         },
     ]
-}
-
+},
 ];
 
 let selectMotivos = document.getElementById("motivo");
