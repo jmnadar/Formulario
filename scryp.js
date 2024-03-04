@@ -182,7 +182,7 @@ motivos.map(item => {
 loadMotivos();
 
 const loadSubmotivos = (nameMotivo) => {
-let options = `<option value="">Elige un motivo</option>`;
+let options = `<option value="">--Elige un motivo--</option>`;
 
 motivos.find(motivo => motivo.name === nameMotivo).submotivo.map(item => {
     options += `<option value="${item.name}">${item.name}</option>`;
@@ -193,7 +193,7 @@ selectSubmotivos.innerHTML = options;
 
 selectMotivos.addEventListener("change", function(e) {
 if (!e.target.value) {
-    selectSubmotivos.innerHTML = `<option value="">Elige un submotivo</option>`;
+    selectSubmotivos.innerHTML = `<option value="">--Elige un submotivo--</option>`;
 } else {
     loadSubmotivos(e.target.value);
 }
